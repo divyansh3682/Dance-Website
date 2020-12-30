@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+
+block style
+    style
+      include ../static/style.css
+
+block content
+   
+    section#introSection
+        div Welcome to MAX Dance Accademy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission  
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/logo.png")  
+                div.card-content
+                    p This is the best dance accademy              
+        div.card
+            h3 Dance The way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/dance2.png")  
+                div.card-content
+                    p This is the best dance accademy  
+        div.card            
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/dance3.png")  
+                div.card-content
+                    p This is the best dance accademy  
+            div.card-box
+
+
+    section#sponsorSection
+            h2 Our Sponsor  
+            div#sponsor
+                img(src="/static/signboard.png", alt="sponsor image",class="spimg")
+                img(src="/static/icon.png", alt="sponsor image",class="spimg")
+                img(src="/static/gol.png", alt="sponsor image",class="spimg")
+                img(src="/static/google.png", alt="sponsor image",class="spimg")

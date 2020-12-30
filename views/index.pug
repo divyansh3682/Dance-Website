@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    title Max Dance Accademy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.png", alt="logo coming")
+                | MDA
+            li #[a(href ="/") Home ]
+            li #[a(href ="/") About]
+            li #[a(href ="/") Services]
+            li #[a(href ="/") Info]
+            li #[a(href ="/") Contact Info]
+    section#introSection
+        div Welcome to MAX Dance Accademy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission  
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/logo.png")  
+                div.card-content
+                    p This is the best dance accademy              
+        div.card
+            h3 Dance The way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/dance2.png")  
+                div.card-content
+                    p This is the best dance accademy  
+        div.card            
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/dance3.png")  
+                div.card-content
+                    p This is the best dance accademy  
+            div.card-box
+
+
+    section#sponsorSection
+            h2 Our Sponsor  
+            div#sponsor
+                img(src="/static/signboard.png", alt="sponsor image",class="spimg")
+                img(src="/static/icon.png", alt="sponsor image",class="spimg")
+                img(src="/static/gol.png", alt="sponsor image",class="spimg")
+                img(src="/static/google.png", alt="sponsor image",class="spimg")
+
+           
+        
+    
+    footer#footer
+        | Copyright © 2020 MaxDanceAccademy.com | All rights reserved
+    script
+      include ../static/index.js
